@@ -8,9 +8,13 @@ textInput.addEventListener("input", function() {
     checkBtn.onclick = function() {
         if (inputText.length > 0 && (inputText== reversedText)) {
             resultText.textContent = `The word "${inputText}" is a palindrome.`;
+            resultText.style.color = "green";
+            resultText.style.fontWeight = "bold";
         } 
         else {
             resultText.innerHTML = `The word "${inputText}" is not a palindrome.`;
+            resultText.style.color = "red";
+            resultText.style.fontWeight = "bold";
         }
     };
 });
